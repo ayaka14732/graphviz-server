@@ -8,11 +8,26 @@ Under development.
 
 Render graph images on webpage.
 
-## Usage
+## Example
 
-Example: https://ayaka-apps.shn.hk/graphviz/?src=digraph%20G%20%7B%0A%20bgcolor%3Dtransparent%0A%20A%20-%3E%20B%3B%0A%7D
+Graphviz source:
 
-![](https://ayaka-apps.shn.hk/graphviz/?src=digraph%20G%20%7B%0A%20bgcolor%3Dtransparent%0A%20A%20-%3E%20B%3B%0A%7D)
+```graphviz
+digraph G {
+ bgcolor=grey
+ A -> B;
+}
+```
+
+Corresponding URL:
+
+https://ayaka-apps.shn.hk/graphviz/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D
+
+Result:
+
+![](https://ayaka-apps.shn.hk/graphviz/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D)
+
+## API Usage
 
 Query string:
 
@@ -22,6 +37,6 @@ Query string:
 ## Run
 
 ```sh
-$ docker build -t graphviz-server https://github.com/ayaka14732/graphviz-server.git
+$ docker build -t graphviz-server https://github.com/ayaka14732/graphviz-server.git#main
 $ docker run -d -p "127.0.0.1:25001:8080" --name=graphviz-server-box graphviz-server
 ```
