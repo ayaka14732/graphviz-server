@@ -1,8 +1,6 @@
 # graphviz-server
 
-A server that renders graphviz image from HTTP requests.
-
-Under development.
+A server that renders graphviz image from web requests.
 
 ## Motivation
 
@@ -34,9 +32,18 @@ Query string:
 - `src`: graphviz source code
 - `format`: currently one of 'svg', 'png', 'gif', 'pdf'
 
-## Run
+## Supported Scripts
+
+- CJK Characters
+- Emoji
+- Khmer
+- Latin
+
+Please open an issue if you want more writing systems to be supported.
+
+## Deploy
 
 ```sh
 $ docker build -t graphviz-server https://github.com/ayaka14732/graphviz-server.git#main
-$ docker run -d -p "127.0.0.1:25001:8080" --name=graphviz-server-box graphviz-server
+$ docker run -d -p "127.0.0.1:25001:8080" graphviz-server
 ```
