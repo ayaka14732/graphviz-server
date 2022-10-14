@@ -1,4 +1,4 @@
-# graphviz-server
+# Graphviz Server
 
 A server that renders graphviz image from web requests.
 
@@ -17,13 +17,13 @@ digraph G {
 }
 ```
 
-Corresponding URL:
+URI encode:
 
-https://ayaka-apps.shn.hk/graphviz/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D
+https://graphviz.shn.hk/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D
 
 Result:
 
-![](https://ayaka-apps.shn.hk/graphviz/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D)
+![](https://graphviz.shn.hk/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D)
 
 ## API Usage
 
@@ -43,7 +43,4 @@ Please open an issue if you want more writing systems to be supported.
 
 ## Deploy
 
-```sh
-$ docker build -t graphviz-server https://github.com/ayaka14732/graphviz-server.git#main
-$ docker run -d -p "127.0.0.1:25001:8080" graphviz-server
-```
+The service is supposed to be deployed with Docker containers.
