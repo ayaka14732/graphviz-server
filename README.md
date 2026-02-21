@@ -19,11 +19,11 @@ digraph G {
 
 URI encode:
 
-https://graphviz.shn.hk/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D
+https://graphviz-server-production.up.railway.app/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D
 
 Result:
 
-![](https://graphviz.shn.hk/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D)
+![](https://graphviz-server-production.up.railway.app/?src=digraph%20G%20%7B%0A%20bgcolor%3Dgrey%0A%20A%20-%3E%20B%3B%0A%7D)
 
 ## API Usage
 
